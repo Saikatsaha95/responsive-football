@@ -218,9 +218,10 @@ footer img {
   }
 
   .players {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 100vw);
     grid-row-gap: 30px;
     justify-items: center;
+    justify-content: center;
   }
 
   .buy-tickets {
@@ -272,7 +273,8 @@ footer img {
   .players {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
-    justify-items: flex-start;
+    justify-items: center;
+    justify-content: center;
   }
 
   .buy-tickets {
