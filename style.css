@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
+  box-sizing: border-box;
 }
 
 /* Top section */
@@ -14,13 +15,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2d25a0;
 }
 
 .top-banner {
   width: 100%;
   height: 80vh;
-
+  background-color: #2d25a0;
   margin-bottom: 70px;
 }
 
@@ -66,8 +66,6 @@ button:hover {
   width: 700px;
   margin-right: 200px;
   margin-bottom: 30px;
-  /* padding-left: 102px;
-  padding-bottom: 86px; */
 }
 
 /* players section */
@@ -96,6 +94,7 @@ main {
   border: 2px solid white;
   box-shadow: 10px 10px 30px black;
   background-color: #ffffff;
+  margin-right: 20px;
 }
 
 .player-img img {
@@ -169,4 +168,120 @@ footer img {
   padding: 7px;
   border-radius: 50%;
   margin-right: 7px;
+}
+
+/* Mobile Devices iphone x */
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+  .flexible-container {
+    flex-direction: column;
+  }
+
+  .top-banner {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .half-width {
+    display: block;
+    height: 0px;
+  }
+
+  .watch-live-area {
+    margin-left: 16px;
+    margin-right: 66px;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    width: 278px;
+    font-size: 34px;
+    margin-bottom: 10px;
+    height: 150px;
+  }
+
+  .button-transition {
+    margin-top: 10px;
+  }
+
+  .top-banner .half-width img {
+    width: 250px;
+    height: 250px;
+    margin-right: 0;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+    justify-items: center;
+  }
+
+  .buy-tickets {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  footer img {
+    width: 60%;
+    object-fit: contain;
+  }
+}
+
+/* Tablet devices ipad-pro */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+  }
+
+  .top-banner {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  .watch-live-area {
+    margin-left: 50px;
+    margin-right: 0;
+    padding-bottom: 20px;
+    margin-bottom: 124px;
+  }
+
+  h1 {
+    width: 300px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    height: 200px;
+  }
+
+  .top-banner .half-width img {
+    width: 300px;
+    height: 256px;
+    margin-right: 0px;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-items: flex-start;
+  }
+
+  .buy-tickets {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  footer img {
+    width: 60%;
+    object-fit: contain;
+  }
 }
