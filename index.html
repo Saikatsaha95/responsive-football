@@ -22,7 +22,11 @@
       <section class="top-banner flexible-container">
         <div class="half-width watch-live-area">
           <h1>Conmebol Copa America 2021</h1>
-          <a href="https://www.youtube.com" target="_blank">
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            class="button-transition"
+          >
             Watch Live <i class="fas fa-arrow-right"></i>
           </a>
         </div>
@@ -196,6 +200,58 @@
             </div>
           </div>
         </article>
+      </section>
+
+      <section class="buy-tickets">
+        <h2>Find Your Tickets</h2>
+        <label for="firstname">Firstname:</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Lionel"
+          required
+        />
+        <br />
+        <br />
+        <label for="lastname">Lastname:</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Messi"
+          required
+        />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email here"
+          required
+        />
+        <br /><br />
+        <label for="match-date">Match Date:</label>
+        <input
+          type="date"
+          name="matchdate"
+          id="match-date"
+          placeholder="Lionel"
+          required
+        />
+        <br />
+        <br />
+
+        <h3>Choose payment option</h3>
+        <input type="radio" name="payment" id="paypal" />
+        <label for="paypal">Paypal</label>
+        <input type="radio" name="payment" id="cc" />
+        <label for="cc">Credit Card</label><br />
+        <br />
+        <button type="submit" class="button-transition">
+          Submit <i class="fas fa-arrow-right"></i>
+        </button>
       </section>
     </main>
 
