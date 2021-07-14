@@ -131,6 +131,24 @@ input {
   border-radius: 20px;
 }
 
+label {
+  padding-right: 10px;
+}
+
+.user-email {
+  padding-left: 35px;
+}
+
+.user-match-date {
+  margin-left: 20px;
+}
+
+#match-date {
+  margin-right: 30px;
+  margin-left: 0px;
+  padding-left: 40px;
+}
+
 /* footer section */
 footer {
   width: 100%;
